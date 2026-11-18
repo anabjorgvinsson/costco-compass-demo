@@ -7,7 +7,7 @@ import { PERSONAS, PRODUCTS } from './ui.js';
 import { state, save, resetTo, persona, addToCart, removeFromCart, changeQty, saveComparison, unsaveComparison, subtotal } from './state.js';
 import { CompassAssistant } from './chat.js';
 import { validateFixtures } from './validate.js';
-import { landingView } from './views/landing.js';
+import { landingView, welcomeView } from './views/landing.js';
 import { memberView } from './views/member.js';
 import { compassView, VIEWS } from './views/compass.js';
 import { dataUseModal } from './views/common.js';
@@ -37,6 +37,7 @@ function parse() {
   if ((name === 'member' || name === 'compass') && PERSONAS[pid]) {
     return { name, persona: pid, view: name === 'compass' && VIEWS.includes(view) ? view : 'home' };
   }
+  if (name === 'login') return { name: 'login', via: pid === 'via=shop' ? 'shop' : '' };
   return { name: 'landing' };
 }
 
@@ -47,8 +48,8 @@ const goView = (view) => go(`#/compass/${state.personaId}${view === 'home' ? '' 
 let lastKey = '', lastMsgCount = 0, focusScroll = false;
 function render() {
   const r = parse();
-  if (r.name !== 'landing' && state.personaId !== r.persona) resetTo(r.persona); // clean persona switch
-  const key = `${r.name}/${r.persona || ''}/${r.view || ''}`;
+  if ((r.name === 'member' || r.name === 'compass') && state.personaId !== r.persona) resetTo(r.persona); // clean persona switch
+  const key = `${r.name}/${r.persona || r.via || ''}/${r.view || ''}`;
   const navChanged = key !== lastKey;
   if (navChanged) { state.ui.sheetDept = null; state.ui.modal = null; }
 
@@ -61,10 +62,10 @@ function render() {
   const y = window.scrollY;
 
   const prevOverlay = app.querySelector('.sheet, .modal') ? `${state.ui.sheetDept}|${state.ui.modal}` : null;
-  app.innerHTML = r.name === 'landing' ? landingView() : r.name === 'member' ? memberView() + (state.ui.modal === 'data' ? dataUseModal() : '') + (state.ui.modal === 'product' && state.ui.product ? productModal(state.ui.product) : '') : compassView(r.view);
+  app.innerHTML = r.name === 'landing' ? welcomeView() : r.name === 'login' ? landingView(r.via) : r.name === 'member' ? memberView() + (state.ui.modal === 'data' ? dataUseModal() : '') + (state.ui.modal === 'product' && state.ui.product ? productModal(state.ui.product) : '') : compassView(r.view);
   if (prevOverlay === `${state.ui.sheetDept}|${state.ui.modal}`) app.querySelectorAll('.sheet, .modal, .overlay').forEach((el) => { el.style.animation = 'none'; });
   document.body.classList.toggle('sheet-open', !!(state.ui.sheetDept || state.ui.modal));
-  document.title = r.name === 'landing' ? 'Costco Compass · Student Concept Demo'
+  document.title = r.name === 'landing' ? 'Costco Compass' : r.name === 'login' ? 'Log in · Costco Compass'
     : `${PERSONAS[r.persona].displayName} · Costco Compass${r.name === 'member' ? ' Home' : ''}`;
 
   if (focusId) { const el = document.getElementById(focusId); if (el) { el.focus(); el.setSelectionRange(el.value.length, el.value.length); } }
@@ -134,7 +135,7 @@ function sendPrompt(raw) {
 // ---------- actions ----------
 const actions = {
   'pick-persona': () => false, // let the link navigate; router resets state for the new persona
-  'switch-member': () => { resetTo(null); go('#/'); },
+  'switch-member': () => { resetTo(null); go('#/login'); },
   restart: () => { resetTo(null); go('#/'); toast('Demo restarted'); },
   nav: (el) => goView(el.dataset.view),
   'send-prompt': (el) => sendPrompt(el.dataset.prompt),

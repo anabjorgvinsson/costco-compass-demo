@@ -606,3 +606,39 @@ button.step:hover { border-color: var(--blue); }
 .concept-tag { font-size: 10.5px; font-weight: 700; letter-spacing: .04em; color: rgba(255,255,255,.8); border: 1px solid rgba(226,177,60,.6); border-radius: 999px; padding: 2px 7px; white-space: nowrap; }
 .desk-head .concept-tag { margin-left: -10px; }
 @media (max-width: 380px) { .app-head .concept-tag { display: none; } }
+
+/* ===== Welcome splash ===== */
+.welcome { position: relative; min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; overflow: hidden; color: #fff;
+  background: radial-gradient(120% 70% at 50% 30%, #0E5BC9 0%, var(--blue) 50%, var(--blue-dark) 100%);
+  padding: env(safe-area-inset-top) 20px calc(20px + env(safe-area-inset-bottom)); }
+.welcome-bg { position: absolute; inset: 0; pointer-events: none; }
+.welcome-bg .ring { position: absolute; left: 50%; top: 38%; border-radius: 50%; border: 1.5px solid rgba(226,177,60,.22); transform: translate(-50%, -50%); }
+.welcome-bg .r1 { width: 260px; height: 260px; border-style: dashed; animation: spin 60s linear infinite; }
+.welcome-bg .r2 { width: 420px; height: 420px; border-color: rgba(255,255,255,.08); }
+.welcome-bg .r3 { width: 620px; height: 620px; border-color: rgba(255,255,255,.05); }
+@keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+.welcome-main { position: relative; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding-top: 24px; }
+.welcome-mark svg { width: 128px; height: 128px; filter: drop-shadow(0 10px 30px rgba(0,0,0,.35)); }
+.welcome-mark .needle { transform-origin: 20px 20px; animation: settle 2.4s cubic-bezier(.3,1.6,.5,1) both; }
+@keyframes settle { 0% { transform: rotate(-120deg); } 60% { transform: rotate(18deg); } 100% { transform: rotate(0); } }
+.welcome-word { display: flex; align-items: baseline; gap: 8px; font-size: clamp(38px, 11vw, 60px); letter-spacing: -.03em; margin-top: 22px; line-height: 1; }
+.welcome-word b { font-weight: 800; color: #fff; }
+.welcome-word i { font-style: normal; font-weight: 700; color: var(--gold); }
+.welcome-tag { margin: 14px 0 0; font-size: 17px; font-weight: 600; color: rgba(255,255,255,.92); }
+.welcome-feats { list-style: none; display: flex; gap: 8px; padding: 0; margin: 22px 0 0; flex-wrap: wrap; justify-content: center; }
+.welcome-feats li { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 700; padding: 6px 12px; border-radius: 999px; background: rgba(255,255,255,.1); border: 1px solid rgba(226,177,60,.45); }
+.welcome-feats .ic { width: 16px; height: 16px; color: var(--gold); }
+.welcome-actions { position: relative; width: 100%; max-width: 420px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+.welcome-actions .btn + .btn { margin-top: 0; }
+.btn.white-outline { background: transparent; color: #fff; box-shadow: inset 0 0 0 2px rgba(255,255,255,.85); }
+.btn.white-outline:hover { background: rgba(255,255,255,.1); }
+.welcome-foot { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 12px; color: rgba(255,255,255,.7); text-align: center; margin: 6px 0 0; }
+.welcome-foot .ic { width: 14px; height: 14px; flex: none; }
+
+/* login picker hero */
+.landing-hero.compact { padding: 20px 20px 64px; }
+.landing-hero.compact h1 { font-size: clamp(24px, 6.5vw, 34px); margin-top: 14px; }
+.landing-hero.compact .lede { font-size: 15.5px; }
+.hero-back { position: absolute; left: 12px; top: calc(12px + env(safe-area-inset-top)); width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: rgba(255,255,255,.14); color: #fff; z-index: 1; }
+.login-note { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--gold); margin-top: 6px; }
+.login-note .ic { width: 16px; height: 16px; }
