@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Costco Compass</title>
+  <script>
+    // GitHub Pages fallback: turn /<repo>/member/sarah or /<repo>/compass/jake/map into hash routes.
+    (function () {
+      var path = location.pathname;
+      var m = path.match(/^(.*?)\/(member|compass)\/(sarah|jake|maya)(?:\/(home|chat|list|map|summary))?\/?$/);
+      var base = m ? m[1] : path.replace(/\/[^/]*$/, '');
+      var hash = m ? '#/' + m[2] + '/' + m[3] + (m[4] ? '/' + m[4] : '') : '#/';
+      location.replace(base + '/' + location.search + hash);
+    })();
+  </script>
+</head>
+<body><p>Redirecting to Costco Compass…</p></body>
+</html>

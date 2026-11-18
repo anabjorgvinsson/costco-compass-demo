@@ -1,0 +1,1183 @@
+{
+  "schemaVersion": "1.0",
+  "disclaimer": "Student concept. All member profiles, product prices, histories, availability and pharmacy information are fictional examples, not Costco data.",
+  "personas": {
+    "sarah": {
+      "id": "sarah",
+      "displayName": "Sarah",
+      "age": 39,
+      "avatarInitials": "S",
+      "subtitle": "Busy parent • Household of four",
+      "membership": "Executive (demo)",
+      "homeWarehouse": "Example Warehouse • Nashville, TN",
+      "mission": "Restock family essentials, plan three dinners, and coordinate an existing pharmacy pickup.",
+      "budgetUsd": 160,
+      "preferences": [
+        "Family-friendly meals",
+        "Time savings",
+        "Affordable bulk staples"
+      ],
+      "recentPurchases": [
+        {
+          "productId": "diapers",
+          "when": "3 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "milk",
+          "when": "3 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "eggs",
+          "when": "3 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "rotisserie-chicken",
+          "when": "6 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "paper-towels",
+          "when": "6 weeks ago",
+          "quantity": 1
+        }
+      ],
+      "defaultPrompt": "I have 30 minutes. Plan three family dinners under $160, add diapers, and tell me whether my pharmacy pickup is ready.",
+      "promptChips": [
+        "Plan three family dinners under $160",
+        "Restock my family essentials",
+        "Help coordinate my pharmacy pickup"
+      ],
+      "baseCart": [
+        "diapers",
+        "rotisserie-chicken",
+        "milk",
+        "eggs",
+        "rice",
+        "tortillas",
+        "vegetables-frozen",
+        "apples"
+      ],
+      "suggestions": [
+        {
+          "productId": "marinara",
+          "why": "Pairs with an optional family pasta dinner."
+        },
+        {
+          "productId": "paper-towels",
+          "why": "You bought these recently; add them only if you need a refill."
+        }
+      ],
+      "pharmacyDemo": {
+        "status": "Ready for pickup (fictional demo only)",
+        "description": "Bring your pharmacy pickup confirmation. No medication information is stored or displayed."
+      },
+      "routeNarrative": "Household essentials → dinner ingredients → pharmacy pickup → checkout",
+      "insight": "One shopping trip can coordinate repeated family needs and an existing pickup."
+    },
+    "jake": {
+      "id": "jake",
+      "displayName": "Jake",
+      "age": 21,
+      "avatarInitials": "J",
+      "subtitle": "College student • Solo shopper",
+      "membership": "Gold Star (demo)",
+      "homeWarehouse": "Example Warehouse • Nashville, TN",
+      "mission": "Prep high-protein meals and evaluate a laptop for classes.",
+      "budgetUsd": 75,
+      "preferences": [
+        "High-protein meal prep",
+        "Student budget",
+        "Tech comparisons"
+      ],
+      "recentPurchases": [
+        {
+          "productId": "greek-yogurt",
+          "when": "2 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "eggs",
+          "when": "2 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "rice",
+          "when": "5 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "protein-bars",
+          "when": "5 weeks ago",
+          "quantity": 1
+        }
+      ],
+      "defaultPrompt": "Make me a high-protein lunch meal-prep list for about $75, and help me compare laptops under $900 for school.",
+      "promptChips": [
+        "Build my high-protein weekly list",
+        "Compare laptops under $900",
+        "Map the fastest route through Costco"
+      ],
+      "baseCart": [
+        "chicken-frozen",
+        "greek-yogurt",
+        "eggs",
+        "rice",
+        "vegetables-frozen",
+        "protein-bars"
+      ],
+      "suggestions": [
+        {
+          "productId": "bananas",
+          "why": "Pairs well with yogurt and makes an inexpensive snack."
+        },
+        {
+          "productId": "laptop-a",
+          "why": "Illustrative laptop for comparison; not automatically added to your grocery budget."
+        }
+      ],
+      "comparisonIds": [
+        "laptop-a",
+        "laptop-b"
+      ],
+      "routeNarrative": "Electronics comparison → protein foods → pantry basics → checkout",
+      "insight": "One assistant can support food planning and high-consideration purchases without mixing their budgets."
+    },
+    "maya": {
+      "id": "maya",
+      "displayName": "Maya",
+      "age": 25,
+      "avatarInitials": "M",
+      "subtitle": "Shared apartment • Six roommates",
+      "membership": "Gold Star (demo)",
+      "homeWarehouse": "Example Warehouse • Nashville, TN",
+      "mission": "Restock shared cleaning supplies, bathroom essentials, and breakfast foods.",
+      "budgetUsd": 130,
+      "preferences": [
+        "Cost per unit",
+        "Bulk value",
+        "Shared household shopping"
+      ],
+      "recentPurchases": [
+        {
+          "productId": "paper-towels",
+          "when": "1 month ago",
+          "quantity": 1
+        },
+        {
+          "productId": "laundry-detergent",
+          "when": "1 month ago",
+          "quantity": 1
+        },
+        {
+          "productId": "oats",
+          "when": "1 month ago",
+          "quantity": 1
+        },
+        {
+          "productId": "dish-soap",
+          "when": "6 weeks ago",
+          "quantity": 1
+        },
+        {
+          "productId": "toilet-paper",
+          "when": "6 weeks ago",
+          "quantity": 1
+        }
+      ],
+      "defaultPrompt": "Our six-person apartment needs paper towels, cleaning supplies, bathroom basics, and breakfast food. Keep it near $130.",
+      "promptChips": [
+        "Restock supplies for six roommates",
+        "Find the best unit value",
+        "Map our essentials shopping trip"
+      ],
+      "baseCart": [
+        "paper-towels",
+        "laundry-detergent",
+        "dish-soap",
+        "trash-bags",
+        "toilet-paper",
+        "oats",
+        "eggs",
+        "bananas"
+      ],
+      "suggestions": [
+        {
+          "productId": "sponges",
+          "why": "Useful add-on for a shared kitchen; optional."
+        },
+        {
+          "productId": "coffee",
+          "why": "May fit a shared breakfast restock; ask roommates first."
+        }
+      ],
+      "routeNarrative": "Paper goods → cleaning supplies → breakfast staples → checkout",
+      "insight": "A shared household can organize bulk purchasing with transparent unit value."
+    }
+  },
+  "products": [
+    {
+      "id": "diapers",
+      "name": "Kirkland-style Diapers, Value Pack",
+      "departmentId": "paper",
+      "demoPriceUsd": 42.99,
+      "unitLabel": "192 count",
+      "kind": "home",
+      "tags": [
+        "family",
+        "diapers",
+        "repeat",
+        "essentials"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "paper-towels",
+      "name": "Bulk Paper Towels",
+      "departmentId": "paper",
+      "demoPriceUsd": 19.99,
+      "unitLabel": "12 rolls",
+      "kind": "home",
+      "tags": [
+        "paper",
+        "towels",
+        "cleaning",
+        "shared",
+        "repeat"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "toilet-paper",
+      "name": "Bulk Toilet Paper",
+      "departmentId": "paper",
+      "demoPriceUsd": 22.99,
+      "unitLabel": "30 rolls",
+      "kind": "home",
+      "tags": [
+        "toilet",
+        "paper",
+        "bathroom",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "laundry-detergent",
+      "name": "Liquid Laundry Detergent",
+      "departmentId": "cleaning",
+      "demoPriceUsd": 19.49,
+      "unitLabel": "170 loads",
+      "kind": "home",
+      "tags": [
+        "detergent",
+        "laundry",
+        "cleaning",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "dish-soap",
+      "name": "Bulk Dish Soap",
+      "departmentId": "cleaning",
+      "demoPriceUsd": 10.99,
+      "unitLabel": "2 bottles",
+      "kind": "home",
+      "tags": [
+        "dish",
+        "soap",
+        "cleaning",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "trash-bags",
+      "name": "Kitchen Trash Bags",
+      "departmentId": "cleaning",
+      "demoPriceUsd": 16.99,
+      "unitLabel": "200 count",
+      "kind": "home",
+      "tags": [
+        "trash",
+        "bags",
+        "cleaning",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "sponges",
+      "name": "Multipack Dish Sponges",
+      "departmentId": "cleaning",
+      "demoPriceUsd": 8.49,
+      "unitLabel": "12 count",
+      "kind": "home",
+      "tags": [
+        "sponges",
+        "cleaning",
+        "shared",
+        "suggestion"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "milk",
+      "name": "2% Milk Twin Pack",
+      "departmentId": "refrigerated",
+      "demoPriceUsd": 7.49,
+      "unitLabel": "2 gallons",
+      "kind": "grocery",
+      "tags": [
+        "milk",
+        "family",
+        "breakfast",
+        "repeat"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "eggs",
+      "name": "Large Eggs",
+      "departmentId": "dairy",
+      "demoPriceUsd": 6.99,
+      "unitLabel": "24 count",
+      "kind": "grocery",
+      "tags": [
+        "eggs",
+        "breakfast",
+        "protein",
+        "family",
+        "repeat"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "greek-yogurt",
+      "name": "Plain Greek Yogurt",
+      "departmentId": "refrigerated",
+      "demoPriceUsd": 9.99,
+      "unitLabel": "48 oz",
+      "kind": "grocery",
+      "tags": [
+        "high-protein",
+        "yogurt",
+        "breakfast",
+        "repeat"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "berries",
+      "name": "Fresh Mixed Berries",
+      "departmentId": "dairy",
+      "demoPriceUsd": 8.99,
+      "unitLabel": "large pack",
+      "kind": "grocery",
+      "tags": [
+        "berries",
+        "family",
+        "fruit"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "bananas",
+      "name": "Bananas",
+      "departmentId": "dairy",
+      "demoPriceUsd": 3.99,
+      "unitLabel": "3 lb",
+      "kind": "grocery",
+      "tags": [
+        "banana",
+        "breakfast",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "apples",
+      "name": "Bag of Apples",
+      "departmentId": "dairy",
+      "demoPriceUsd": 9.99,
+      "unitLabel": "5 lb",
+      "kind": "grocery",
+      "tags": [
+        "fruit",
+        "family"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "rotisserie-chicken",
+      "name": "Rotisserie Chicken",
+      "departmentId": "deli",
+      "demoPriceUsd": 4.99,
+      "unitLabel": "1 chicken",
+      "kind": "grocery",
+      "tags": [
+        "chicken",
+        "dinner",
+        "family",
+        "protein",
+        "repeat"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "chicken-frozen",
+      "name": "Frozen Chicken Breast",
+      "departmentId": "frozen",
+      "demoPriceUsd": 22.99,
+      "unitLabel": "5 lb",
+      "kind": "grocery",
+      "tags": [
+        "protein",
+        "high-protein",
+        "meal-prep",
+        "chicken"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "vegetables-frozen",
+      "name": "Frozen Mixed Vegetables",
+      "departmentId": "frozen",
+      "demoPriceUsd": 8.99,
+      "unitLabel": "5 lb",
+      "kind": "grocery",
+      "tags": [
+        "vegetables",
+        "meal-prep",
+        "side",
+        "suggestion"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "rice",
+      "name": "Long-Grain Rice",
+      "departmentId": "pantry",
+      "demoPriceUsd": 11.99,
+      "unitLabel": "20 lb",
+      "kind": "grocery",
+      "tags": [
+        "rice",
+        "meal-prep",
+        "bulk",
+        "family",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "tortillas",
+      "name": "Flour Tortillas",
+      "departmentId": "pantry",
+      "demoPriceUsd": 5.99,
+      "unitLabel": "40 count",
+      "kind": "grocery",
+      "tags": [
+        "family",
+        "dinner",
+        "wraps",
+        "suggestion"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "pasta",
+      "name": "Dry Pasta Multipack",
+      "departmentId": "pantry",
+      "demoPriceUsd": 8.99,
+      "unitLabel": "6 boxes",
+      "kind": "grocery",
+      "tags": [
+        "pasta",
+        "family",
+        "dinner"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "marinara",
+      "name": "Marinara Sauce Multipack",
+      "departmentId": "pantry",
+      "demoPriceUsd": 9.49,
+      "unitLabel": "3 jars",
+      "kind": "grocery",
+      "tags": [
+        "pasta",
+        "family",
+        "suggestion"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "oats",
+      "name": "Old-Fashioned Oats",
+      "departmentId": "pantry",
+      "demoPriceUsd": 8.99,
+      "unitLabel": "10 lb",
+      "kind": "grocery",
+      "tags": [
+        "oats",
+        "breakfast",
+        "shared",
+        "bulk"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "departmentId": "pantry",
+      "demoPriceUsd": 11.49,
+      "unitLabel": "large bag",
+      "kind": "grocery",
+      "tags": [
+        "breakfast",
+        "shared"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "protein-bars",
+      "name": "Protein Bars Variety Box",
+      "departmentId": "pantry",
+      "demoPriceUsd": 13.99,
+      "unitLabel": "20 bars",
+      "kind": "grocery",
+      "tags": [
+        "protein",
+        "high-protein",
+        "snacks",
+        "student"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "coffee",
+      "name": "Ground Coffee",
+      "departmentId": "beverages",
+      "demoPriceUsd": 14.99,
+      "unitLabel": "2 lb",
+      "kind": "grocery",
+      "tags": [
+        "coffee",
+        "shared",
+        "breakfast"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "laptop-a",
+      "name": "Student Laptop A (Demo Model)",
+      "departmentId": "electronics",
+      "demoPriceUsd": 699.0,
+      "unitLabel": "1 laptop",
+      "kind": "electronics",
+      "tags": [
+        "computer",
+        "laptop",
+        "student",
+        "electronics"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "laptop-b",
+      "name": "Student Laptop B (Demo Model)",
+      "departmentId": "electronics",
+      "demoPriceUsd": 849.0,
+      "unitLabel": "1 laptop",
+      "kind": "electronics",
+      "tags": [
+        "computer",
+        "laptop",
+        "student",
+        "electronics"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "printer-paper",
+      "name": "Copy Paper Ream",
+      "departmentId": "office",
+      "demoPriceUsd": 7.99,
+      "unitLabel": "500 sheets",
+      "kind": "home",
+      "tags": [
+        "paper",
+        "office",
+        "student"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    },
+    {
+      "id": "vitamins",
+      "name": "Daily Multivitamin (Demo Product)",
+      "departmentId": "pharmacy",
+      "demoPriceUsd": 17.99,
+      "unitLabel": "1 bottle",
+      "kind": "other",
+      "tags": [
+        "medicine",
+        "vitamins"
+      ],
+      "stockLabel": "Available in demo warehouse",
+      "isIllustrative": true
+    }
+  ],
+  "warehouse": {
+    "viewBox": {
+      "width": 1200,
+      "height": 700
+    },
+    "orientationNote": "Illustrative vector layout inspired by the uploaded hand-drawn Costco store map; not a real warehouse layout.",
+    "entranceNodeId": "c5_3",
+    "checkoutNodeId": "c5_2",
+    "exitNodeId": "c5_3",
+    "floorLabel": "Compass Demo Warehouse",
+    "corridorLaneXs": [
+      92,
+      300,
+      520,
+      748,
+      980,
+      1098
+    ],
+    "corridorLaneYs": [
+      106,
+      294,
+      477,
+      625
+    ],
+    "nodes": [
+      {
+        "id": "c0_0",
+        "x": 92,
+        "y": 106,
+        "neighbors": [
+          "c1_0",
+          "c0_1"
+        ]
+      },
+      {
+        "id": "c1_0",
+        "x": 300,
+        "y": 106,
+        "neighbors": [
+          "c0_0",
+          "c2_0",
+          "c1_1"
+        ]
+      },
+      {
+        "id": "c2_0",
+        "x": 520,
+        "y": 106,
+        "neighbors": [
+          "c1_0",
+          "c3_0",
+          "c2_1"
+        ]
+      },
+      {
+        "id": "c3_0",
+        "x": 748,
+        "y": 106,
+        "neighbors": [
+          "c2_0",
+          "c4_0",
+          "c3_1"
+        ]
+      },
+      {
+        "id": "c4_0",
+        "x": 980,
+        "y": 106,
+        "neighbors": [
+          "c3_0",
+          "c5_0",
+          "c4_1"
+        ]
+      },
+      {
+        "id": "c5_0",
+        "x": 1098,
+        "y": 106,
+        "neighbors": [
+          "c4_0",
+          "c5_1"
+        ]
+      },
+      {
+        "id": "c0_1",
+        "x": 92,
+        "y": 294,
+        "neighbors": [
+          "c1_1",
+          "c0_0",
+          "c0_2"
+        ]
+      },
+      {
+        "id": "c1_1",
+        "x": 300,
+        "y": 294,
+        "neighbors": [
+          "c0_1",
+          "c2_1",
+          "c1_0",
+          "c1_2"
+        ]
+      },
+      {
+        "id": "c2_1",
+        "x": 520,
+        "y": 294,
+        "neighbors": [
+          "c1_1",
+          "c3_1",
+          "c2_0",
+          "c2_2"
+        ]
+      },
+      {
+        "id": "c3_1",
+        "x": 748,
+        "y": 294,
+        "neighbors": [
+          "c2_1",
+          "c4_1",
+          "c3_0",
+          "c3_2"
+        ]
+      },
+      {
+        "id": "c4_1",
+        "x": 980,
+        "y": 294,
+        "neighbors": [
+          "c3_1",
+          "c5_1",
+          "c4_0",
+          "c4_2"
+        ]
+      },
+      {
+        "id": "c5_1",
+        "x": 1098,
+        "y": 294,
+        "neighbors": [
+          "c4_1",
+          "c5_0",
+          "c5_2"
+        ]
+      },
+      {
+        "id": "c0_2",
+        "x": 92,
+        "y": 477,
+        "neighbors": [
+          "c1_2",
+          "c0_1",
+          "c0_3"
+        ]
+      },
+      {
+        "id": "c1_2",
+        "x": 300,
+        "y": 477,
+        "neighbors": [
+          "c0_2",
+          "c2_2",
+          "c1_1",
+          "c1_3"
+        ]
+      },
+      {
+        "id": "c2_2",
+        "x": 520,
+        "y": 477,
+        "neighbors": [
+          "c1_2",
+          "c3_2",
+          "c2_1",
+          "c2_3"
+        ]
+      },
+      {
+        "id": "c3_2",
+        "x": 748,
+        "y": 477,
+        "neighbors": [
+          "c2_2",
+          "c4_2",
+          "c3_1",
+          "c3_3"
+        ]
+      },
+      {
+        "id": "c4_2",
+        "x": 980,
+        "y": 477,
+        "neighbors": [
+          "c3_2",
+          "c5_2",
+          "c4_1",
+          "c4_3"
+        ]
+      },
+      {
+        "id": "c5_2",
+        "x": 1098,
+        "y": 477,
+        "neighbors": [
+          "c4_2",
+          "c5_1",
+          "c5_3"
+        ]
+      },
+      {
+        "id": "c0_3",
+        "x": 92,
+        "y": 625,
+        "neighbors": [
+          "c1_3",
+          "c0_2"
+        ]
+      },
+      {
+        "id": "c1_3",
+        "x": 300,
+        "y": 625,
+        "neighbors": [
+          "c0_3",
+          "c2_3",
+          "c1_2"
+        ]
+      },
+      {
+        "id": "c2_3",
+        "x": 520,
+        "y": 625,
+        "neighbors": [
+          "c1_3",
+          "c3_3",
+          "c2_2"
+        ]
+      },
+      {
+        "id": "c3_3",
+        "x": 748,
+        "y": 625,
+        "neighbors": [
+          "c2_3",
+          "c4_3",
+          "c3_2"
+        ]
+      },
+      {
+        "id": "c4_3",
+        "x": 980,
+        "y": 625,
+        "neighbors": [
+          "c3_3",
+          "c5_3",
+          "c4_2"
+        ]
+      },
+      {
+        "id": "c5_3",
+        "x": 1098,
+        "y": 625,
+        "neighbors": [
+          "c4_3",
+          "c5_2"
+        ]
+      }
+    ],
+    "departments": [
+      {
+        "id": "paper",
+        "label": "Paper Goods",
+        "category": "home",
+        "rect": {
+          "x": 110,
+          "y": 126,
+          "w": 170,
+          "h": 150
+        },
+        "approachNodeId": "c1_1"
+      },
+      {
+        "id": "cleaning",
+        "label": "Laundry / Cleaning",
+        "category": "home",
+        "rect": {
+          "x": 322,
+          "y": 126,
+          "w": 175,
+          "h": 150
+        },
+        "approachNodeId": "c2_1"
+      },
+      {
+        "id": "beverages",
+        "label": "Beverages",
+        "category": "grocery",
+        "rect": {
+          "x": 540,
+          "y": 126,
+          "w": 186,
+          "h": 150
+        },
+        "approachNodeId": "c3_1"
+      },
+      {
+        "id": "frozen",
+        "label": "Frozen",
+        "category": "grocery",
+        "rect": {
+          "x": 772,
+          "y": 126,
+          "w": 186,
+          "h": 150
+        },
+        "approachNodeId": "c4_1"
+      },
+      {
+        "id": "pharmacy",
+        "label": "Medicine / Pharmacy",
+        "category": "service",
+        "rect": {
+          "x": 999,
+          "y": 127,
+          "w": 81,
+          "h": 148
+        },
+        "approachNodeId": "c5_1"
+      },
+      {
+        "id": "deli",
+        "label": "Deli / Rotisserie",
+        "category": "grocery",
+        "rect": {
+          "x": 110,
+          "y": 314,
+          "w": 170,
+          "h": 142
+        },
+        "approachNodeId": "c1_2"
+      },
+      {
+        "id": "refrigerated",
+        "label": "Refrigerated Foods",
+        "category": "grocery",
+        "rect": {
+          "x": 322,
+          "y": 314,
+          "w": 175,
+          "h": 142
+        },
+        "approachNodeId": "c2_2"
+      },
+      {
+        "id": "seasonal",
+        "label": "Seasonal",
+        "category": "seasonal",
+        "rect": {
+          "x": 540,
+          "y": 314,
+          "w": 186,
+          "h": 142
+        },
+        "approachNodeId": "c3_2"
+      },
+      {
+        "id": "pantry",
+        "label": "Pantry Goods",
+        "category": "grocery",
+        "rect": {
+          "x": 772,
+          "y": 314,
+          "w": 186,
+          "h": 142
+        },
+        "approachNodeId": "c4_2"
+      },
+      {
+        "id": "checkout",
+        "label": "Checkout",
+        "category": "service",
+        "rect": {
+          "x": 999,
+          "y": 314,
+          "w": 81,
+          "h": 142
+        },
+        "approachNodeId": "c5_2"
+      },
+      {
+        "id": "meat",
+        "label": "Meat / Bakery",
+        "category": "grocery",
+        "rect": {
+          "x": 110,
+          "y": 497,
+          "w": 170,
+          "h": 108
+        },
+        "approachNodeId": "c1_3"
+      },
+      {
+        "id": "dairy",
+        "label": "Dairy / Produce",
+        "category": "grocery",
+        "rect": {
+          "x": 322,
+          "y": 497,
+          "w": 175,
+          "h": 108
+        },
+        "approachNodeId": "c2_3"
+      },
+      {
+        "id": "furniture",
+        "label": "Furniture",
+        "category": "home",
+        "rect": {
+          "x": 540,
+          "y": 497,
+          "w": 186,
+          "h": 108
+        },
+        "approachNodeId": "c3_3"
+      },
+      {
+        "id": "electronics",
+        "label": "Electronics",
+        "category": "electronics",
+        "rect": {
+          "x": 772,
+          "y": 497,
+          "w": 186,
+          "h": 108
+        },
+        "approachNodeId": "c4_3"
+      },
+      {
+        "id": "optical",
+        "label": "Optical / Services",
+        "category": "service",
+        "rect": {
+          "x": 999,
+          "y": 497,
+          "w": 81,
+          "h": 108
+        },
+        "approachNodeId": "c5_3"
+      },
+      {
+        "id": "office",
+        "label": "Office / Misc.",
+        "category": "home",
+        "rect": {
+          "x": 110,
+          "y": 32,
+          "w": 170,
+          "h": 55
+        },
+        "approachNodeId": "c1_0"
+      }
+    ],
+    "visualLegend": {
+      "grocery": "#F2AC76",
+      "home": "#A3D4B4",
+      "electronics": "#A4C9EA",
+      "service": "#F4B7BE",
+      "seasonal": "#CBBBEA"
+    },
+    "routeRequirements": [
+      "Connect only listed adjacent corridor nodes",
+      "Do not draw route through department rectangles",
+      "Map department items to approachNodeId",
+      "Route from entrance to selected departments to checkout",
+      "Avoid double stops for multiple items from one department"
+    ]
+  },
+  "chatRules": {
+    "mode": "deterministic-scripted-default",
+    "keywords": {
+      "family": [
+        "dinner",
+        "family",
+        "diapers",
+        "kids",
+        "pharmacy"
+      ],
+      "protein": [
+        "protein",
+        "meal prep",
+        "lunch",
+        "fitness"
+      ],
+      "laptop": [
+        "laptop",
+        "computer",
+        "school",
+        "electronics"
+      ],
+      "household": [
+        "roommate",
+        "supplies",
+        "cleaning",
+        "paper towels",
+        "shared"
+      ],
+      "route": [
+        "where",
+        "map",
+        "find",
+        "route",
+        "aisle",
+        "navigate"
+      ]
+    },
+    "fallback": "I can help with household essentials, meal planning, product comparisons, and planning your demo warehouse trip. Try a suggested request above.",
+    "clinicalFallback": "For prescription or medication questions, please speak with a Costco pharmacist. This demo only shows fictional pickup logistics.",
+    "privacyNote": "When personalization is off, do not use recent purchases to explain or add recommendations."
+  }
+}
