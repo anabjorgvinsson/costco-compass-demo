@@ -40,6 +40,10 @@ gh api -X POST repos/{owner}/costco-compass-demo/pages -f "source[branch]=main" 
 
 The site appears at `https://<your-username>.github.io/costco-compass-demo/` after about a minute.
 
+## Publishing an update
+
+Before each push, run `python3 tools/bump-version.py`. It stamps a new version on every script and stylesheet so phones load the new files right away instead of a cached copy (GitHub Pages lets browsers cache for 10 minutes).
+
 ## QR codes (only after the public URL works)
 
 Open the live URL on your laptop and phone first. Then generate the codes in a throwaway virtual environment:

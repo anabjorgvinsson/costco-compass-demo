@@ -1,6 +1,6 @@
 // Corridor-graph routing. Routes only follow listed adjacent corridor edges (never through departments).
-import { DATA } from './data.js';
-import { DISCOVERY } from './content.js';
+import { DATA } from './data.js?v=20261117202059';
+import { DISCOVERY } from './content.js?v=20261117202059';
 
 const W = DATA.warehouse;
 const NODES = Object.fromEntries(W.nodes.map((n) => [n.id, n]));

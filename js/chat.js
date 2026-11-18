@@ -1,11 +1,11 @@
 // Deterministic, keyword-aware Compass assistant (spec §9, §17).
 // The CompassAssistant interface lets a future server-side LLM adapter replace `deterministicAssistant`
 // without UI changes; see docs/openai-adapter.example.mjs. No network calls happen here.
-import { DATA } from './data.js';
-import { INTENT_ITEMS, GENERIC_REASON, PRODUCT_WORDS, SARAH_MEALS } from './content.js';
-import { PRODUCTS, PERSONAS, clean } from './ui.js';
-import { nutritionOf } from './details.js';
-import { locationOf, stockText } from './inventory.js';
+import { DATA } from './data.js?v=20261117202059';
+import { INTENT_ITEMS, GENERIC_REASON, PRODUCT_WORDS, SARAH_MEALS } from './content.js?v=20261117202059';
+import { PRODUCTS, PERSONAS, clean } from './ui.js?v=20261117202059';
+import { nutritionOf } from './details.js?v=20261117202059';
+import { locationOf, stockText } from './inventory.js?v=20261117202059';
 
 const RULES = { ...DATA.chatRules, fallback: clean(DATA.chatRules.fallback), clinicalFallback: clean(DATA.chatRules.clinicalFallback) };
 const has = (t, words) => words.some((w) => new RegExp(`(^|[^a-z])${w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}`, 'i').test(t));

@@ -1,8 +1,8 @@
 // Interactive SVG warehouse map (spec §5, §19). Geometry comes straight from the fixture.
-import { esc, icon, DEPT_COLORS, PRODUCTS } from '../ui.js';
-import { DEPT_LINES, VERTICAL_DEPTS } from '../content.js';
-import { NODES, ROUTE_DEPTS, WAREHOUSE, badgeAnchor } from '../route.js';
-import { state } from '../state.js';
+import { esc, icon, DEPT_COLORS, PRODUCTS } from '../ui.js?v=20261117202059';
+import { DEPT_LINES, VERTICAL_DEPTS } from '../content.js?v=20261117202059';
+import { NODES, ROUTE_DEPTS, WAREHOUSE, badgeAnchor } from '../route.js?v=20261117202059';
+import { state } from '../state.js?v=20261117202059';
 
 const shade = { grocery: '#B8641F', home: '#2E7D52', electronics: '#2D6CA8', service: '#B03A4C', seasonal: '#6B4FB3' };
 

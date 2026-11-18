@@ -1,6 +1,6 @@
 // Client-side demo state (spec §17). Session persistence only remembers the active persona's demo edits.
-import { PERSONAS, PRODUCTS, clean } from './ui.js';
-import { REASONS } from './content.js';
+import { PERSONAS, PRODUCTS, clean } from './ui.js?v=20261117202059';
+import { REASONS } from './content.js?v=20261117202059';
 
 const KEY = 'costco-compass-demo-v1';
 

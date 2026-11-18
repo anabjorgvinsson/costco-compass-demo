@@ -1,6 +1,6 @@
-import { clean, esc, money, icon, productIcon, logo, PRODUCTS, PERSONAS, DEPTS, DEPT_COLORS, unitPriceText } from '../ui.js';
-import { state, persona, cartLine, reasonFor, suggestionReason, itemCount } from '../state.js';
-import { LAPTOP_SPECS } from '../content.js';
+import { clean, esc, money, icon, productIcon, logo, PRODUCTS, PERSONAS, DEPTS, DEPT_COLORS, unitPriceText } from '../ui.js?v=20261117202059';
+import { state, persona, cartLine, reasonFor, suggestionReason, itemCount } from '../state.js?v=20261117202059';
+import { LAPTOP_SPECS } from '../content.js?v=20261117202059';
 
 export const DISCLAIMER = 'Student concept prototype · all member data and prices are fictional.';
 export const PERSONA_TINT = { sarah: '#C2410C', jake: '#0E7490', maya: '#7C3AED' };

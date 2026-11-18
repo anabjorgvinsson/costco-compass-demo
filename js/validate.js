@@ -1,6 +1,6 @@
-import { DATA } from './data.js';
-import { DISCOVERY, INTENT_ITEMS, REASONS, PRODUCT_WORDS, EXTRA_CHIPS } from './content.js';
-import { CATALOG, AISLES } from './inventory.js';
+import { DATA } from './data.js?v=20261117202059';
+import { DISCOVERY, INTENT_ITEMS, REASONS, PRODUCT_WORDS, EXTRA_CHIPS } from './content.js?v=20261117202059';
+import { CATALOG, AISLES } from './inventory.js?v=20261117202059';
 
 /** Referential-integrity contract from spec §16. Returns a list of problems (empty = OK). */
 export function validateFixtures() {

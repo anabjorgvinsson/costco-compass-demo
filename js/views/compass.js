@@ -1,13 +1,13 @@
 // Surface B — mobile-first Compass app: home / chat / list / map / summary.
-import { clean, esc, icon, logo, money, productIcon, PRODUCTS, DEPTS, unitPriceText, PERSONAS } from '../ui.js';
-import { state, persona, cartLine, subtotal, itemCount, openSuggestions, suggestionReason, reasonFor, requiredStops, checklist, foundCount } from '../state.js';
-import { buildRoute } from '../route.js';
-import { avatar, membershipPill, personalizationToggle, pharmacyCard, laptopComparison, productRow, deptChip, disclaimerBar, listBadge, dataUseModal } from './common.js';
-import { mapSvg, legend, stopDone } from './map.js';
-import { productDetail, productModal, aisleScene, inventoryList, deptStats, searchInventory, stockPill, nutritionLabel, AISLES } from './product.js';
-import { locationOf } from '../inventory.js';
-import { goalSummary } from '../details.js';
-import { EXTRA_CHIPS } from '../content.js';
+import { clean, esc, icon, logo, money, productIcon, PRODUCTS, DEPTS, unitPriceText, PERSONAS } from '../ui.js?v=20261117202059';
+import { state, persona, cartLine, subtotal, itemCount, openSuggestions, suggestionReason, reasonFor, requiredStops, checklist, foundCount } from '../state.js?v=20261117202059';
+import { buildRoute } from '../route.js?v=20261117202059';
+import { avatar, membershipPill, personalizationToggle, pharmacyCard, laptopComparison, productRow, deptChip, disclaimerBar, listBadge, dataUseModal } from './common.js?v=20261117202059';
+import { mapSvg, legend, stopDone } from './map.js?v=20261117202059';
+import { productDetail, productModal, aisleScene, inventoryList, deptStats, searchInventory, stockPill, nutritionLabel, AISLES } from './product.js?v=20261117202059';
+import { locationOf } from '../inventory.js?v=20261117202059';
+import { goalSummary } from '../details.js?v=20261117202059';
+import { EXTRA_CHIPS } from '../content.js?v=20261117202059';
 
 const VIEWS = ['home', 'chat', 'list', 'map', 'summary'];
 

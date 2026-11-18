@@ -3,15 +3,15 @@
 //   #/member/:persona        desktop personalized homepage
 //   #/compass/:persona[/:view]  mobile Compass (home|chat|list|map|summary)
 //   ?persona=sarah           deep link → #/compass/sarah
-import { PERSONAS, PRODUCTS } from './ui.js';
-import { state, save, resetTo, persona, addToCart, removeFromCart, changeQty, saveComparison, unsaveComparison, subtotal } from './state.js';
-import { CompassAssistant } from './chat.js';
-import { validateFixtures } from './validate.js';
-import { landingView, welcomeView } from './views/landing.js';
-import { memberView } from './views/member.js';
-import { compassView, VIEWS } from './views/compass.js';
-import { dataUseModal } from './views/common.js';
-import { productModal } from './views/product.js';
+import { PERSONAS, PRODUCTS } from './ui.js?v=20261117202059';
+import { state, save, resetTo, persona, addToCart, removeFromCart, changeQty, saveComparison, unsaveComparison, subtotal } from './state.js?v=20261117202059';
+import { CompassAssistant } from './chat.js?v=20261117202059';
+import { validateFixtures } from './validate.js?v=20261117202059';
+import { landingView, welcomeView } from './views/landing.js?v=20261117202059';
+import { memberView } from './views/member.js?v=20261117202059';
+import { compassView, VIEWS } from './views/compass.js?v=20261117202059';
+import { dataUseModal } from './views/common.js?v=20261117202059';
+import { productModal } from './views/product.js?v=20261117202059';
 
 const app = document.getElementById('app');
 const ZOOMS = [1, 1.6, 2.4];

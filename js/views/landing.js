@@ -1,5 +1,5 @@
-import { esc, icon, logo, PERSONAS, moneyShort, clean } from '../ui.js';
-import { avatar, DISCLAIMER } from './common.js';
+import { esc, icon, logo, PERSONAS, moneyShort, clean } from '../ui.js?v=20261117202059';
+import { avatar, DISCLAIMER } from './common.js?v=20261117202059';
 
 /** First screen: brand splash with Shop now / Log in. */
 export function welcomeView() {

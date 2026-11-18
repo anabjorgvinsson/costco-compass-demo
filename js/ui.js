@@ -1,6 +1,6 @@
-import { DATA } from './data.js';
-import { PRODUCT_ICON } from './content.js';
-import { CATALOG } from './inventory.js';
+import { DATA } from './data.js?v=20261117202059';
+import { PRODUCT_ICON } from './content.js?v=20261117202059';
+import { CATALOG } from './inventory.js?v=20261117202059';
 
 export const PERSONAS = DATA.personas;
 export const PRODUCTS = Object.fromEntries(CATALOG.map((p) => [p.id, p]));

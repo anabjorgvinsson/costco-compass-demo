@@ -1,8 +1,8 @@
 // Product detail, nutrition label, mock aisle rendering and inventory list.
-import { esc, icon, money, productIcon, PRODUCTS, DEPTS, unitPriceText } from '../ui.js';
-import { AISLES, SLOT_NAMES, CATALOG, locationOf, stockText, stockShort, restockText } from '../inventory.js';
-import { nutritionOf, highlightsOf, goalFit } from '../details.js';
-import { state, cartLine } from '../state.js';
+import { esc, icon, money, productIcon, PRODUCTS, DEPTS, unitPriceText } from '../ui.js?v=20261117202059';
+import { AISLES, SLOT_NAMES, CATALOG, locationOf, stockText, stockShort, restockText } from '../inventory.js?v=20261117202059';
+import { nutritionOf, highlightsOf, goalFit } from '../details.js?v=20261117202059';
+import { state, cartLine } from '../state.js?v=20261117202059';
 
 export const stockPill = (p) => `<span class="stock ${p.stock}">${stockShort(p)}</span>`;
 export const deptItems = (deptId) => CATALOG.filter((p) => p.departmentId === deptId);

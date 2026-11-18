@@ -1,7 +1,7 @@
 // Surface A — personalized desktop homepage (responsive). Shares state with the Compass app.
-import { clean, esc, icon, logo, money, productIcon, PRODUCTS, DEPTS } from '../ui.js';
-import { state, persona, cartLine, subtotal, itemCount, openSuggestions, suggestionReason } from '../state.js';
-import { avatar, membershipPill, personalizationToggle, pharmacyCard, DISCLAIMER, listBadge, deptChip } from './common.js';
+import { clean, esc, icon, logo, money, productIcon, PRODUCTS, DEPTS } from '../ui.js?v=20261117202059';
+import { state, persona, cartLine, subtotal, itemCount, openSuggestions, suggestionReason } from '../state.js?v=20261117202059';
+import { avatar, membershipPill, personalizationToggle, pharmacyCard, DISCLAIMER, listBadge, deptChip } from './common.js?v=20261117202059';
 
 export function memberView() {
   const p = persona();

@@ -1,7 +1,7 @@
 // MOCK warehouse inventory for the demo. Every name, item number, price, quantity and shelf location
 // here is illustrative — not live Costco data. Fixture product IDs and prices from data.js are preserved;
 // this file only adds specific display names, shelf placement, mock stock, and extra browse-only items.
-import { DATA } from './data.js';
+import { DATA } from './data.js?v=20261117202059';
 
 /** Aisle presentation per department. style: rack | cooler | counter | service */
 export const AISLES = {
